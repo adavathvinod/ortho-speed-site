@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Award, GraduationCap, Stethoscope, Users, Calendar, Star, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import doctorImage from "@/assets/doctor-profile.png";
+import doctorImage from "@/assets/doctor-profile.jpeg";
 import { Helmet } from "react-helmet-async";
 
 const Specialist = () => {

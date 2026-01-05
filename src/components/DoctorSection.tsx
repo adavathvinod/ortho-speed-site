@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Award, GraduationCap, Stethoscope, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import doctorImage from "@/assets/doctor-profile.png";
+import doctorImage from "@/assets/doctor-profile.jpeg";
 
 const DoctorSection = () => {
   return (
