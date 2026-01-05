@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, Calendar, Star, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import hospitalImage from "@/assets/hospital-building.png";
+import hospitalImage from "@/assets/hospital-building.jpeg";
 
 const HeroSection = () => {
   return (
