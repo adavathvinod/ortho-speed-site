@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import spineImage from "@/assets/spine-specialty.jpeg";
 
 const specialties = [
   {
     name: "Spine",
-    icon: "🔙",
+    image: spineImage,
     description: "Comprehensive spine care for cervical, thoracic, and lumbar conditions",
   },
   {
@@ -77,7 +78,17 @@ const SpecialtiesSection = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="text-4xl mb-4">{specialty.icon}</div>
+              {'image' in specialty ? (
+                <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-hospital-light-blue flex items-center justify-center">
+                  <img 
+                    src={specialty.image} 
+                    alt={specialty.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="text-4xl mb-4">{specialty.icon}</div>
+              )}
               <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-hospital-blue transition-colors">
                 {specialty.name}
               </h3>

@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ConditionsSection from "@/components/ConditionsSection";
 import CTASection from "@/components/CTASection";
 import HospitalGallery from "@/components/HospitalGallery";
+import AppointmentForm from "@/components/AppointmentForm";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -30,6 +31,7 @@ const Index = () => {
           <SpecialtiesSection />
           <DoctorSection />
           <HospitalGallery />
+          <AppointmentForm />
           <ConditionsSection />
           <TestimonialsSection />
           <CTASection />
