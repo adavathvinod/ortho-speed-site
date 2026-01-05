@@ -1,9 +1,23 @@
-import { Phone, MessageCircle, Instagram } from "lucide-react";
+import { Phone, MessageCircle, Instagram, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FloatingButtons = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+      {/* Gmail Button */}
+      <motion.a
+        href="mailto:mehetrey.hospital@gmail.com"
+        className="flex items-center justify-center w-14 h-14 rounded-full bg-[#EA4335] text-white shadow-lg hover:shadow-xl transition-shadow"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        aria-label="Send Email"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+      >
+        <Mail className="h-7 w-7" />
+      </motion.a>
+
       {/* Instagram Button */}
       <motion.a
         href="https://www.instagram.com/mehetreyhospitals"
@@ -15,7 +29,7 @@ const FloatingButtons = () => {
         aria-label="Follow on Instagram"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.4 }}
       >
         <Instagram className="h-7 w-7" />
       </motion.a>
@@ -31,7 +45,7 @@ const FloatingButtons = () => {
         aria-label="Chat on WhatsApp"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.6 }}
       >
         <MessageCircle className="h-7 w-7" />
       </motion.a>
@@ -45,7 +59,7 @@ const FloatingButtons = () => {
         aria-label="Emergency Call"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7 }}
+        transition={{ delay: 0.8 }}
       >
         <Phone className="h-7 w-7" />
       </motion.a>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Clock } from "lucide-react";
+import { Menu, X, Phone, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -26,6 +26,13 @@ const Header = () => {
               <Clock className="h-4 w-4" />
               <span>24/7 Emergency Services</span>
             </div>
+            <a 
+              href="mailto:mehetrey.hospital@gmail.com" 
+              className="hidden sm:flex items-center gap-2 hover:text-hospital-sky transition-colors"
+            >
+              <Mail className="h-4 w-4" />
+              <span>mehetrey.hospital@gmail.com</span>
+            </a>
           </div>
           <a 
             href="tel:+919110709110" 

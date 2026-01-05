@@ -102,6 +102,15 @@ const Footer = () => {
                 </div>
               </li>
               <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Email</p>
+                  <a href="mailto:mehetrey.hospital@gmail.com" className="text-sm opacity-80 hover:text-hospital-sky">
+                    mehetrey.hospital@gmail.com
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-semibold">Working Hours</p>
