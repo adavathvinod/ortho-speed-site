@@ -7,6 +7,7 @@ import DoctorSection from "@/components/DoctorSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ConditionsSection from "@/components/ConditionsSection";
 import CTASection from "@/components/CTASection";
+import HospitalGallery from "@/components/HospitalGallery";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -28,6 +29,7 @@ const Index = () => {
           <HeroSection />
           <SpecialtiesSection />
           <DoctorSection />
+          <HospitalGallery />
           <ConditionsSection />
           <TestimonialsSection />
           <CTASection />

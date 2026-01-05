@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const specialties = [
   {
     name: "Spine",
-    icon: "🦴",
-    description: "Comprehensive spine care including disc replacement and spinal fusion",
+    icon: "🔙",
+    description: "Comprehensive spine care for cervical, thoracic, and lumbar conditions",
   },
   {
     name: "Shoulder",
