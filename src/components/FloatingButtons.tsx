@@ -1,9 +1,25 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FloatingButtons = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+      {/* Instagram Button */}
+      <motion.a
+        href="https://www.instagram.com/mehetreyhospitals"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-lg hover:shadow-xl transition-shadow"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        aria-label="Follow on Instagram"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+      >
+        <Instagram className="h-7 w-7" />
+      </motion.a>
+
       {/* WhatsApp Button */}
       <motion.a
         href="https://wa.me/919110709110?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
