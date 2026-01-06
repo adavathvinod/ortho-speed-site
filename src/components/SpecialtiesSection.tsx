@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Bone, Hand, Footprints, Microscope, Cog } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import spineIcon from "@/assets/spine-icon.jpeg";
 
@@ -12,37 +12,37 @@ const specialties = [
   },
   {
     name: "Shoulder",
-    icon: Bone,
+    icon: "💪",
     description: "Rotator cuff repairs, shoulder replacement, and sports injuries",
   },
   {
     name: "Hip",
-    icon: Bone,
+    icon: "🦵",
     description: "Hip replacement surgery and fracture management",
   },
   {
     name: "Knee",
-    icon: Bone,
+    icon: "🦿",
     description: "Total knee replacement, ligament reconstruction, and arthroscopy",
   },
   {
     name: "Foot & Ankle",
-    icon: Footprints,
+    icon: "🦶",
     description: "Ankle reconstruction, bunion correction, and sports injuries",
   },
   {
     name: "Hand",
-    icon: Hand,
+    icon: "✋",
     description: "Carpal tunnel, trigger finger, and fracture treatments",
   },
   {
     name: "Arthroscopy",
-    icon: Microscope,
+    icon: "🔬",
     description: "Minimally invasive keyhole surgery for faster recovery",
   },
   {
     name: "Joint Replacement",
-    icon: Cog,
+    icon: "⚙️",
     description: "Advanced arthroplasty for hip, knee, and shoulder joints",
   },
 ];
@@ -87,9 +87,7 @@ const SpecialtiesSection = () => {
                   />
                 </div>
               ) : (
-                <div className="w-16 h-16 mb-4 rounded-lg bg-hospital-light-blue flex items-center justify-center">
-                  <specialty.icon className="w-8 h-8 text-hospital-blue" />
-                </div>
+                <div className="text-4xl mb-4">{specialty.icon}</div>
               )}
               <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-hospital-blue transition-colors">
                 {specialty.name}
