@@ -1,48 +1,48 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Bone, Hand, Footprints, Microscope, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import spineImage from "@/assets/spine-specialty.jpeg";
+import spineIcon from "@/assets/spine-icon.jpeg";
 
 const specialties = [
   {
     name: "Spine",
-    image: spineImage,
+    image: spineIcon,
     description: "Comprehensive spine care for cervical, thoracic, and lumbar conditions",
   },
   {
     name: "Shoulder",
-    icon: "💪",
+    icon: Bone,
     description: "Rotator cuff repairs, shoulder replacement, and sports injuries",
   },
   {
     name: "Hip",
-    icon: "🦵",
+    icon: Bone,
     description: "Hip replacement surgery and fracture management",
   },
   {
     name: "Knee",
-    icon: "🦿",
+    icon: Bone,
     description: "Total knee replacement, ligament reconstruction, and arthroscopy",
   },
   {
     name: "Foot & Ankle",
-    icon: "🦶",
+    icon: Footprints,
     description: "Ankle reconstruction, bunion correction, and sports injuries",
   },
   {
     name: "Hand",
-    icon: "✋",
+    icon: Hand,
     description: "Carpal tunnel, trigger finger, and fracture treatments",
   },
   {
     name: "Arthroscopy",
-    icon: "🔬",
+    icon: Microscope,
     description: "Minimally invasive keyhole surgery for faster recovery",
   },
   {
     name: "Joint Replacement",
-    icon: "⚙️",
+    icon: Cog,
     description: "Advanced arthroplasty for hip, knee, and shoulder joints",
   },
 ];
@@ -79,15 +79,17 @@ const SpecialtiesSection = () => {
               transition={{ delay: index * 0.1 }}
             >
               {'image' in specialty ? (
-                <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-hospital-light-blue flex items-center justify-center">
+                <div className="w-16 h-16 mb-4 rounded-lg overflow-hidden bg-hospital-light-blue flex items-center justify-center p-2">
                   <img 
                     src={specialty.image} 
                     alt={specialty.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               ) : (
-                <div className="text-4xl mb-4">{specialty.icon}</div>
+                <div className="w-16 h-16 mb-4 rounded-lg bg-hospital-light-blue flex items-center justify-center">
+                  <specialty.icon className="w-8 h-8 text-hospital-blue" />
+                </div>
               )}
               <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-hospital-blue transition-colors">
                 {specialty.name}
