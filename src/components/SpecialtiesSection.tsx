@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import spineIcon from "@/assets/spine-icon.jpeg";
+import jointReplacementIcon from "@/assets/joint-replacement-icon.png";
+import arthroscopyIcon from "@/assets/arthroscopy-icon.png";
 
 const specialties = [
   {
@@ -37,12 +39,12 @@ const specialties = [
   },
   {
     name: "Arthroscopy",
-    icon: "🔬",
+    image: arthroscopyIcon,
     description: "Minimally invasive keyhole surgery for faster recovery",
   },
   {
     name: "Joint Replacement",
-    icon: "⚙️",
+    image: jointReplacementIcon,
     description: "Advanced arthroplasty for hip, knee, and shoulder joints",
   },
 ];
