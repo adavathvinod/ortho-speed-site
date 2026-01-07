@@ -6,12 +6,15 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar, ArrowRight, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import spineIcon from "@/assets/spine-icon.jpeg";
+import arthroscopyIcon from "@/assets/arthroscopy-icon.png";
+import jointReplacementIcon from "@/assets/joint-replacement-icon.png";
 
 const specialtiesData = [
   {
     id: "spine",
     name: "Spine Surgery",
-    icon: "🦴",
+    image: spineIcon,
     description: "Comprehensive spine care for conditions affecting the cervical, thoracic, and lumbar spine.",
     treatments: [
       "Disc Replacement Surgery",
@@ -101,7 +104,7 @@ const specialtiesData = [
   {
     id: "arthroscopy",
     name: "Arthroscopy",
-    icon: "🔬",
+    image: arthroscopyIcon,
     description: "Minimally invasive keyhole surgery for faster recovery and less pain.",
     treatments: [
       "Knee Arthroscopy",
@@ -116,7 +119,7 @@ const specialtiesData = [
   {
     id: "joint-replacement",
     name: "Joint Replacement",
-    icon: "⚙️",
+    image: jointReplacementIcon,
     description: "Advanced arthroplasty procedures for hip, knee, and shoulder joints.",
     treatments: [
       "Total Hip Replacement",
@@ -177,7 +180,17 @@ const Specialities = () => {
                     <div className="grid md:grid-cols-3 gap-0">
                       {/* Header */}
                       <div className="bg-gradient-to-br from-primary to-hospital-navy-light text-primary-foreground p-8 flex flex-col justify-center">
-                        <span className="text-5xl mb-4">{specialty.icon}</span>
+                        {'image' in specialty ? (
+                          <div className="w-16 h-16 mb-4 rounded-lg overflow-hidden bg-hospital-light-blue flex items-center justify-center p-2">
+                            <img 
+                              src={specialty.image} 
+                              alt={specialty.name}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        ) : (
+                          <span className="text-5xl mb-4">{specialty.icon}</span>
+                        )}
                         <h2 className="text-2xl font-bold mb-2">{specialty.name}</h2>
                         <p className="opacity-90 text-sm">{specialty.description}</p>
                       </div>
