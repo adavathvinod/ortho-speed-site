@@ -181,7 +181,7 @@ const Specialities = () => {
                       {/* Header */}
                       <div className="bg-gradient-to-br from-primary to-hospital-navy-light text-primary-foreground p-8 flex flex-col justify-center">
                         {'image' in specialty ? (
-                          <div className="w-16 h-16 mb-4 rounded-lg overflow-hidden bg-white/20 flex items-center justify-center p-2">
+                          <div className="w-16 h-16 mb-4 rounded-lg overflow-hidden bg-hospital-light-blue flex items-center justify-center p-2">
                             <img 
                               src={specialty.image} 
                               alt={specialty.name}
