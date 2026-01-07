@@ -164,7 +164,7 @@ const Contact = () => {
                   <div className="bg-muted rounded-2xl p-4 h-full min-h-[500px]">
                     <div className="rounded-xl overflow-hidden h-full shadow-hospital">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.4!2d78.5996!3d17.3373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3e3ab8f2c0d%3A0x4b1e5a1e5b5d5e5f!2sKolan%20Shiva%20Reddy%20Nagar%2C%20Hayatnagar%2C%20Hyderabad%2C%20Telangana%20501505!5e0!3m2!1sen!2sin!4v1702000000000!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5533982873967!2d78.6142008751638!3d17.337084183541542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba148ec03bc2b%3A0xf66f6d444e19adc!2sMEHETREY%20HOSPITAL%20-BEST%20BONE%20JOINT%20AND%20SPINE%20CARE!5e0!3m2!1sen!2sin!4v1767750247417!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0, minHeight: "480px" }}
