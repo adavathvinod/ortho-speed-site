@@ -122,9 +122,22 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
-          <p className="text-sm opacity-80">
+        <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col items-center gap-3 md:flex-row md:justify-between md:items-center">
+          <p className="text-sm opacity-80 text-center md:text-left">
             © {currentYear} Mehetrey Hospital. All Rights Reserved. | Designed for Excellence in Orthopaedic Care
+          </p>
+          <p className="text-sm text-center md:text-right">
+            <span className="opacity-80">Digital growth partner — </span>
+            <a
+              href="https://www.wimira.com/"
+              target="_blank"
+              rel="noopener"
+              title="Wimira Digital — digital growth partner for web, UX/UI, SEO, GEO, content & technology"
+              aria-label="Digital growth partner Wimira Digital — web design, development, UX/UI, SEO, GEO and growth services"
+              className="text-hospital-sky hover:underline transition-colors"
+            >
+              Wimira Digital
+            </a>
           </p>
         </div>
       </div>
